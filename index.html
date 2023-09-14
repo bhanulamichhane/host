@@ -1,53 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Loading</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
 
-        .profile-card {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
 
-        .profile-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: #ccc; /* You can replace this with an actual profile picture */
-            margin: 0 auto 15px;
-        }
+    <body>
+        <header class="vh-100 d-flex flex-column justify-content-between header">
+            <nav class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <button class='logo me-3'>
+                        BL
+                    </button>
+                    <div class='logo--text'>Bhanu Lamichhane</div>
+                </div>
+                <ul class="row">
+                    <li class="col">
+                        <a href="#" class="link">About</a>
+                    </li>
+                    <li class="col">
+                        <a href="#" class="link">Project</a>
+                    </li>
+                    <li class="col">
+                        <a href="#" class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <section class="row">
+                    <div class="col">
+                        <h1>Hello there, I'm Bhanu - a software developer living in south asia Nepal</h1>
+                        <p class="about-description">
+                            For over 2 years I've had experience with software development, have knowledge of backend as
+                            well as front end. Check out some of my work below, find out more about me, and don't
+                            hesitate to
+                            say hello back!
+                        </p>
+                    </div>
+                    <div class="col"></div>
+                </section>
+                <section class="header--footer">
+                    <a href="mailto:bhanu@gmail.com?subject=Greeting&body=Hello, Bhanu"
+                        class="btn--mail mb-5">bhanu@gmail.com</a
+                        href="mailto:bhanu@gmail.com?cc=bhanu@gamil.com&bcc=bhanu@gmail.com&subject=Feedback on portfolio&body=Hello, Bhanu">
+                </section>
+            </section>
+        </header>
+        <main>
 
-        .profile-name {
-            font-size: 24px;
-            font-weight: bold;
-        }
+        </main>
+        <footer></footer>
+    </body>
 
-        .loading-text {
-            font-size: 16px;
-            color: #999;
-        }
-    </style>
-</head>
-<body>
-    <div class="profile-card">
-        <div class="profile-image"></div>
-        <div class="profile-name">Loading...</div>
-        <div class="loading-text">Please wait while we load your profile.</div>
-    </div>
-</body>
 </html>
